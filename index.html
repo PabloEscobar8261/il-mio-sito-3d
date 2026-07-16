@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Mio Sito 3D</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Questo script serve per far funzionare i modelli 3D di Spline -->
-    <script type="module" src="https://unpkg.com"></script>
+    <!-- Script fondamentale di Google per leggere e animare i file .glb -->
+    <script type="module" src="https://googleapis.com"></script>
 </head>
 <body>
 
@@ -23,15 +23,13 @@
     <main class="hero">
         <div class="hero-text">
             <h1>Benvenuto nel mio spazio 3D</h1>
-            <p>Questo sito è stato creato da zero usando l'Intelligenza Artificiale e modelli interattivi tridimensionali.</p>
+            <p>Questo sito è stato creato da zero con l'Intelligenza Artificiale e ospita un modello 3D in formato GLB.</p>
             <button class="btn">Esplora</button>
         </div>
         
         <div class="hero-3d">
-            <div id="canvas3d">
-                <!-- Ecco il link corretto ricavato dal tuo progetto Spline -->
-                <spline-viewer url="https://spline.design"></spline-viewer>
-            </div>
+            <!-- Collegamento corretto al tuo file delle forbici -->
+            <model-viewer src="barbers_scissors.glb" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
         </div>
     </main>
 
