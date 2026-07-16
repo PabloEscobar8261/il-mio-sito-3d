@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Questo script serve per far funzionare i modelli 3D di Spline -->
+    <script type="module" src="https://unpkg.com"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Futuro3D</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Progetti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-text">
+            <h1>Benvenuto nel mio spazio 3D</h1>
+            <p>Questo sito è stato creato da zero usando l'Intelligenza Artificiale e modelli interattivi tridimensionali.</p>
+            <button class="btn">Esplora</button>
+        </div>
+        
+        <!-- Qui dentro l'AI caricherà l'animazione 3D -->
+        <div class="hero-3d">
+            <div id="canvas3d">
+                <!-- Il modello 3D comparirà qui -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
